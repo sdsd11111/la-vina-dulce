@@ -3,7 +3,6 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import WhatsAppButton from "@/components/whatsapp-button"
 import TestimonialsCarousel from "@/components/testimonials-carousel"
-import InteractiveVideo from "@/components/interactive-video"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MessageCircle, MapPin, Clock, Users, Award, PartyPopper } from "lucide-react"
@@ -570,7 +569,13 @@ export default function HomePage() {
                 </a>
               </Button>
             </div>
-            <InteractiveVideo />
+            <div className="relative rounded-2xl shadow-lg overflow-hidden">
+              <img 
+                src="/images/mapa-ubicacion-poster.jpg" 
+                alt="Ubicación de La Viña Dulce en Loja"
+                className="w-full h-auto rounded-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
