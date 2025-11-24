@@ -1,0 +1,324 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens for La Viña Dulce bakery theme */
+  --background: oklch(1 0 0); /* White background */
+  --foreground: oklch(0.2 0 0); /* Dark text #333333 */
+  --card: oklch(0.97 0.02 85); /* Light cream #FDE2B9 */
+  --card-foreground: oklch(0.2 0 0); /* Dark text for cards */
+  --popover: oklch(1 0 0); /* White popover background */
+  --popover-foreground: oklch(0.2 0 0); /* Dark text for popovers */
+  --primary: oklch(0.75 0.15 340); /* Pastel pink #F58DB2 */
+  --primary-foreground: oklch(1 0 0); /* White text on primary */
+  --secondary: oklch(0.75 0.12 200); /* Pastel blue #4AC5F5 */
+  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
+  --muted: oklch(0.97 0.02 85); /* Light cream for muted areas */
+  --muted-foreground: oklch(0.45 0 0); /* Muted text */
+  --accent: oklch(0.7 0.08 290); /* Purple accent #BFA3D1 */
+  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9 0.01 85); /* Light border */
+  --input: oklch(1 0 0); /* White input background */
+  --ring: oklch(0.75 0.15 340 / 0.3); /* Primary color ring */
+  --chart-1: oklch(0.75 0.15 340); /* Primary pink */
+  --chart-2: oklch(0.75 0.12 200); /* Secondary blue */
+  --chart-3: oklch(0.7 0.08 290); /* Purple accent */
+  --chart-4: oklch(0.85 0.05 310); /* Light purple */
+  --chart-5: oklch(0.6 0.2 25); /* Chocolate brown */
+  --radius: 1rem; /* Rounded corners */
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.2 0 0);
+  --sidebar-primary: oklch(0.75 0.15 340);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.75 0.12 200);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.9 0.01 85);
+  --sidebar-ring: oklch(0.75 0.15 340 / 0.3);
+
+  /* Added custom bakery-specific color variables */
+  --bakery-pink: oklch(0.75 0.15 340); /* #F58DB2 */
+  --bakery-blue: oklch(0.75 0.12 200); /* #4AC5F5 */
+  --bakery-purple-start: oklch(0.4 0.15 290); /* #5E1F80 */
+  --bakery-purple-end: oklch(0.6 0.12 290); /* #8E44AD */
+  --bakery-brown: oklch(0.3 0.08 25); /* #4C2B1D */
+  --bakery-cream: oklch(0.97 0.02 85); /* #FDE2B9 */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.75 0.15 340);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.75 0.12 200);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.7 0.08 290);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.75 0.15 340 / 0.3);
+  --chart-1: oklch(0.75 0.15 340);
+  --chart-2: oklch(0.75 0.12 200);
+  --chart-3: oklch(0.7 0.08 290);
+  --chart-4: oklch(0.85 0.05 310);
+  --chart-5: oklch(0.6 0.2 25);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.75 0.15 340);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.75 0.12 200);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.75 0.15 340 / 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added custom bakery color tokens */
+  --color-bakery-pink: var(--bakery-pink);
+  --color-bakery-blue: var(--bakery-blue);
+  --color-bakery-purple-start: var(--bakery-purple-start);
+  --color-bakery-purple-end: var(--bakery-purple-end);
+  --color-bakery-brown: var(--bakery-brown);
+  --color-bakery-cream: var(--bakery-cream);
+
+  /* Added Google Fonts for bakery typography */
+  --font-pacifico: "Pacifico", cursive;
+  --font-poppins: "Poppins", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-dancing: "Dancing Script", cursive;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+
+  /* Added accessibility and performance optimizations */
+
+  /* Skip link for keyboard navigation */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+
+  .skip-link:focus {
+    top: 6px;
+  }
+
+  /* Keyboard navigation indicators */
+  .keyboard-navigation *:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  /* Lazy loading placeholder */
+  img.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  img.lazy.loaded {
+    opacity: 1;
+  }
+
+  /* Scroll animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Added scroll animations for better UX */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: calc(var(--animation-order, 0) * 0.1s);
+  }
+
+  .scroll-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    :root {
+      --background: oklch(1 0 0);
+      --foreground: oklch(0 0 0);
+      --border: oklch(0 0 0);
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  /* Focus indicators for better accessibility */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  /* Loading states */
+  .loading {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading 1.5s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  /* Print styles */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+
+    body {
+      background: white !important;
+      color: black !important;
+    }
+  }
+
+  /* Added custom bakery gradient background */
+  .bakery-gradient {
+    background: linear-gradient(135deg, var(--bakery-purple-start), var(--bakery-purple-end));
+  }
+
+  /* Added drip effect for decorative elements */
+  .drip-effect::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: inherit;
+    border-radius: 50% 50% 50% 0;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  /* Added mobile slider styles for product cards */
+  .products-slider {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .products-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .products-slider {
+    scroll-snap-type: x mandatory;
+  }
+
+  .products-slider > div > * {
+    scroll-snap-align: start;
+  }
+}
+
+/* Added Google Fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap");
