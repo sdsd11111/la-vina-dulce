@@ -10,6 +10,18 @@ export const metadata: Metadata = {
   description:
     "Resuelve tus dudas sobre pedidos, entregas, métodos de pago y productos de La Viña Dulce. FAQ completa de nuestra pastelería en Loja.",
   keywords: "preguntas frecuentes, FAQ La Viña Dulce, pedidos tortas, entregas Loja, métodos pago",
+  openGraph: {
+    title: "Preguntas Frecuentes | La Viña Dulce - Pastelería y Panadería Loja",
+    description: "Resuelve tus dudas sobre pedidos, entregas, métodos de pago y productos de La Viña Dulce. FAQ completa de nuestra pastelería en Loja.",
+    images: ["/og-image.jpg"],
+    type: "website",
+    locale: "es_EC",
+    url: "https://lavinadulce.com/preguntas-frecuentes",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.jpg"],
+  },
 }
 
 export default function PreguntasFrecuentesPage() {
@@ -69,9 +81,28 @@ export default function PreguntasFrecuentesPage() {
     },
   ]
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  }
+
   return (
     <>
       <Header />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      </head>
       <main className="pt-16">
         <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
           {/* Breadcrumbs */}

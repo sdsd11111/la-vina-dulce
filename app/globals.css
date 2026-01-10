@@ -5,31 +5,54 @@
 
 :root {
   /* Updated color tokens for La Viña Dulce bakery theme */
-  --background: oklch(1 0 0); /* White background */
-  --foreground: oklch(0.2 0 0); /* Dark text #333333 */
-  --card: oklch(0.97 0.02 85); /* Light cream #FDE2B9 */
-  --card-foreground: oklch(0.2 0 0); /* Dark text for cards */
-  --popover: oklch(1 0 0); /* White popover background */
-  --popover-foreground: oklch(0.2 0 0); /* Dark text for popovers */
-  --primary: oklch(0.75 0.15 340); /* Pastel pink #F58DB2 */
-  --primary-foreground: oklch(1 0 0); /* White text on primary */
-  --secondary: oklch(0.75 0.12 200); /* Pastel blue #4AC5F5 */
-  --secondary-foreground: oklch(1 0 0); /* White text on secondary */
-  --muted: oklch(0.97 0.02 85); /* Light cream for muted areas */
-  --muted-foreground: oklch(0.45 0 0); /* Muted text */
-  --accent: oklch(0.7 0.08 290); /* Purple accent #BFA3D1 */
-  --accent-foreground: oklch(1 0 0); /* White text on accent */
+  --background: oklch(1 0 0);
+  /* White background */
+  --foreground: oklch(0.2 0 0);
+  /* Dark text #333333 */
+  --card: oklch(0.97 0.02 85);
+  /* Light cream #FDE2B9 */
+  --card-foreground: oklch(0.2 0 0);
+  /* Dark text for cards */
+  --popover: oklch(1 0 0);
+  /* White popover background */
+  --popover-foreground: oklch(0.2 0 0);
+  /* Dark text for popovers */
+  --primary: oklch(0.75 0.15 340);
+  /* Pastel pink #F58DB2 */
+  --primary-foreground: oklch(1 0 0);
+  /* White text on primary */
+  --secondary: oklch(0.75 0.12 200);
+  /* Pastel blue #4AC5F5 */
+  --secondary-foreground: oklch(1 0 0);
+  /* White text on secondary */
+  --muted: oklch(0.97 0.02 85);
+  /* Light cream for muted areas */
+  --muted-foreground: oklch(0.45 0 0);
+  /* Muted text */
+  --accent: oklch(0.7 0.08 290);
+  /* Purple accent #BFA3D1 */
+  --accent-foreground: oklch(1 0 0);
+  /* White text on accent */
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.9 0.01 85); /* Light border */
-  --input: oklch(1 0 0); /* White input background */
-  --ring: oklch(0.75 0.15 340 / 0.3); /* Primary color ring */
-  --chart-1: oklch(0.75 0.15 340); /* Primary pink */
-  --chart-2: oklch(0.75 0.12 200); /* Secondary blue */
-  --chart-3: oklch(0.7 0.08 290); /* Purple accent */
-  --chart-4: oklch(0.85 0.05 310); /* Light purple */
-  --chart-5: oklch(0.6 0.2 25); /* Chocolate brown */
-  --radius: 1rem; /* Rounded corners */
+  --border: oklch(0.9 0.01 85);
+  /* Light border */
+  --input: oklch(1 0 0);
+  /* White input background */
+  --ring: oklch(0.75 0.15 340 / 0.3);
+  /* Primary color ring */
+  --chart-1: oklch(0.75 0.15 340);
+  /* Primary pink */
+  --chart-2: oklch(0.75 0.12 200);
+  /* Secondary blue */
+  --chart-3: oklch(0.7 0.08 290);
+  /* Purple accent */
+  --chart-4: oklch(0.85 0.05 310);
+  /* Light purple */
+  --chart-5: oklch(0.6 0.2 25);
+  /* Chocolate brown */
+  --radius: 1rem;
+  /* Rounded corners */
   --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.2 0 0);
   --sidebar-primary: oklch(0.75 0.15 340);
@@ -40,12 +63,18 @@
   --sidebar-ring: oklch(0.75 0.15 340 / 0.3);
 
   /* Added custom bakery-specific color variables */
-  --bakery-pink: oklch(0.75 0.15 340); /* #F58DB2 */
-  --bakery-blue: oklch(0.75 0.12 200); /* #4AC5F5 */
-  --bakery-purple-start: oklch(0.4 0.15 290); /* #5E1F80 */
-  --bakery-purple-end: oklch(0.6 0.12 290); /* #8E44AD */
-  --bakery-brown: oklch(0.3 0.08 25); /* #4C2B1D */
-  --bakery-cream: oklch(0.97 0.02 85); /* #FDE2B9 */
+  --bakery-pink: oklch(0.75 0.15 340);
+  /* #F58DB2 */
+  --bakery-blue: oklch(0.75 0.12 200);
+  /* #4AC5F5 */
+  --bakery-purple-start: oklch(0.4 0.15 290);
+  /* #5E1F80 */
+  --bakery-purple-end: oklch(0.6 0.12 290);
+  /* #8E44AD */
+  --bakery-brown: oklch(0.3 0.08 25);
+  /* #4C2B1D */
+  --bakery-cream: oklch(0.97 0.02 85);
+  /* #FDE2B9 */
 }
 
 .dark {
@@ -140,6 +169,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground font-nunito;
   }
@@ -221,6 +251,7 @@
 
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -265,6 +296,7 @@
     0% {
       left: -100%;
     }
+
     100% {
       left: 100%;
     }
@@ -315,10 +347,7 @@
     scroll-snap-type: x mandatory;
   }
 
-  .products-slider > div > * {
+  .products-slider>div>* {
     scroll-snap-align: start;
   }
 }
-
-/* Added Google Fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap");

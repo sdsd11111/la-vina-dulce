@@ -8,9 +8,9 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img 
-                src="/images/Logo.webp" 
-                alt="La Viña Dulce Logo" 
+              <img
+                src="/images/Logo.webp"
+                alt="La Viña Dulce Logo"
                 className="h-16 w-auto"
                 width={160}
                 height={64}
@@ -106,7 +106,7 @@ export default function Footer() {
               className="hover:text-primary transition-colors"
             >
               César Reyes
-            </a> | La Viña Dulce 2025
+            </a> | La Viña Dulce 2026
           </p>
         </div>
       </div>

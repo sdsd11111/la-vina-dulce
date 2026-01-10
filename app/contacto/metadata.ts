@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: "Contáctanos para pedidos especiales, consultas o visitar nuestra pastelería en Loja. Estamos para servirte.",
     images: [
       {
-        url: "/imagen destacada.ico",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "La Viña Dulce - Contacto",
@@ -23,6 +23,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Contacto",
     description: "Contáctanos para pedidos especiales, consultas o visitar nuestra pastelería en Loja. Estamos para servirte.",
-    images: ["/imagen destacada.ico"],
+    images: ["/og-image.jpg"],
   },
 }

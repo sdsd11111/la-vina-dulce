@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: "Conoce nuestra historia y tradición en repostería artesanal en Loja. Más de 8 años endulzando momentos especiales.",
     images: [
       {
-        url: "/imagen destacada.ico",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "La Viña Dulce - Nosotros",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Nosotros",
     description: "Conoce nuestra historia y tradición en repostería artesanal en Loja. Más de 8 años endulzando momentos especiales.",
-    images: ["/imagen destacada.ico"],
+    images: ["/og-image.jpg"],
   },
 }
 

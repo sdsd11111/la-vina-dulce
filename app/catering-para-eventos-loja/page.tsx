@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: "Servicio de catering profesional para bodas, cumpleaños y eventos corporativos en Loja. Menús personalizados, postres exquisitos y atención de primera.",
     images: [
       {
-        url: "/imagen destacada.ico",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "La Viña Dulce - Catering para Eventos",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Catering para Eventos",
     description: "Servicio de catering profesional para bodas, cumpleaños y eventos corporativos en Loja. Menús personalizados, postres exquisitos y atención de primera.",
-    images: ["/imagen destacada.ico"],
+    images: ["/og-image.jpg"],
   },
 }
 

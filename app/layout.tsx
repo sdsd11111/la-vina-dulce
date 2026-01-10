@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lavinadulce.com"),
   title: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
   description:
     "Deliciosas tortas personalizadas, repostería artesanal y catering para eventos en Loja, Ecuador. ¡Endulza tus celebraciones con nosotros!",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   icons: {
     icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     type: "website",
@@ -66,6 +67,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap"
           as="style"
         />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Nunito:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
@@ -88,6 +93,13 @@ export default function RootLayout({
               telephone: "+593995639050",
               email: "negocios@lavinadulce.com",
               url: "https://lavinadulce.com",
+              logo: "https://lavinadulce.com/icon-512.png",
+              image: "https://lavinadulce.com/og-image.jpg",
+              sameAs: [
+                "https://www.facebook.com/lavinadulceloja",
+                "https://www.instagram.com/lavinadulce.loja",
+                "https://wa.me/593995639050"
+              ],
               openingHours: ["Mo-Sa 08:00-20:00", "Su 09:00-14:00"],
               servedCuisine: "Bakery, Pastries, Custom Cakes",
               priceRange: "$",

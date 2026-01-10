@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: "Tortas personalizadas para bodas, cumpleaños y eventos en Loja. Diseños únicos que harán de tu celebración un momento inolvidable.",
     images: [
       {
-        url: "/imagen destacada.ico",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "La Viña Dulce - Tortas Personalizadas",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Tortas Personalizadas",
     description: "Tortas personalizadas para bodas, cumpleaños y eventos en Loja. Diseños únicos que harán de tu celebración un momento inolvidable.",
-    images: ["/imagen destacada.ico"],
+    images: ["/og-image.jpg"],
   },
 }
 
@@ -49,9 +49,9 @@ const cakeCategories = [
         src: "/images/tortas-matrimonio-2.webp",
         alt: "Torta de matrimonio de varios pisos con flores - La Viña Dulce Loja",
       },
-      { 
-        src: "/images/tortas-matrimonio-3.webp", 
-        alt: "Torta de matrimonio minimalista - La Viña Dulce Loja" 
+      {
+        src: "/images/tortas-matrimonio-3.webp",
+        alt: "Torta de matrimonio minimalista - La Viña Dulce Loja"
       },
     ],
     description:
@@ -69,17 +69,17 @@ const cakeCategories = [
     icon: Sparkles,
     title: "💖 TORTAS PARA 15 AÑOS",
     images: [
-      { 
-        src: "/images/tortas-quince-1.webp", 
-        alt: "Torta de 15 años con perlas y degradados en Loja" 
+      {
+        src: "/images/tortas-quince-1.webp",
+        alt: "Torta de 15 años con perlas y degradados en Loja"
       },
-      { 
-        src: "/images/tortas-quince-2.webp", 
-        alt: "Torta de 15 años colorida con brillos en Loja" 
+      {
+        src: "/images/tortas-quince-2.webp",
+        alt: "Torta de 15 años colorida con brillos en Loja"
       },
-      { 
-        src: "/images/tortas-quince-3.webp", 
-        alt: "Torta de 15 años con número decorativo en Loja" 
+      {
+        src: "/images/tortas-quince-3.webp",
+        alt: "Torta de 15 años con número decorativo en Loja"
       },
     ],
     description:
@@ -97,17 +97,17 @@ const cakeCategories = [
     icon: Gift,
     title: "🎈 TORTAS INFANTILES",
     images: [
-      { 
-        src: "/images/tortas-infantiles-1.webp", 
-        alt: "Torta infantil con personajes y colores vivos en Loja" 
+      {
+        src: "/images/tortas-infantiles-1.webp",
+        alt: "Torta infantil con personajes y colores vivos en Loja"
       },
-      { 
-        src: "/images/tortas-infantiles-2.webp", 
-        alt: "Torta infantil con figuras 3D en Loja" 
+      {
+        src: "/images/tortas-infantiles-2.webp",
+        alt: "Torta infantil con figuras 3D en Loja"
       },
-      { 
-        src: "/images/tortas-infantiles-3.webp", 
-        alt: "Torta infantil con foto comestible en Loja" 
+      {
+        src: "/images/tortas-infantiles-3.webp",
+        alt: "Torta infantil con foto comestible en Loja"
       },
     ],
     description:
@@ -125,13 +125,13 @@ const cakeCategories = [
     icon: Building2,
     title: "🏢 TORTAS CORPORATIVAS",
     images: [
-      { 
-        src: "/images/tortas-corporativas-1.webp", 
-        alt: "Torta corporativa con logo de empresa en Loja" 
+      {
+        src: "/images/tortas-corporativas-1.webp",
+        alt: "Torta corporativa con logo de empresa en Loja"
       },
-      { 
-        src: "/images/tortas-corporativas-2.webp", 
-        alt: "Torta corporativa con colores de marca en Loja" 
+      {
+        src: "/images/tortas-corporativas-2.webp",
+        alt: "Torta corporativa con colores de marca en Loja"
       },
       {
         src: "/images/tortas-corporativas-3.webp",
@@ -153,17 +153,17 @@ const cakeCategories = [
     icon: Cake,
     title: "🎂 TORTAS CLÁSICAS PERSONALIZADAS",
     images: [
-      { 
-        src: "/images/tortas-clasicas-1.webp", 
-        alt: "Torta clásica personalizada minimalista en Loja" 
+      {
+        src: "/images/tortas-clasicas-1.webp",
+        alt: "Torta clásica personalizada minimalista en Loja"
       },
-      { 
-        src: "/images/tortas-clasicas-2.webp", 
-        alt: "Torta clásica con diseño floral elegante en Loja" 
+      {
+        src: "/images/tortas-clasicas-2.webp",
+        alt: "Torta clásica con diseño floral elegante en Loja"
       },
-      { 
-        src: "/images/tortas-clasicas-3.webp", 
-        alt: "Torta clásica personalizada con drip en Loja" 
+      {
+        src: "/images/tortas-clasicas-3.webp",
+        alt: "Torta clásica personalizada con drip en Loja"
       },
     ],
     description: "Tu torta clásica con un toque personal: mensaje, colores y acabados que combinan con tu celebración.",
