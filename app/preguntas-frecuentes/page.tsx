@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Preguntas Frecuentes | La Viña Dulce - Pastelería y Panadería Loja",
     description: "Resuelve tus dudas sobre pedidos, entregas, métodos de pago y productos de La Viña Dulce. FAQ completa de nuestra pastelería en Loja.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
     type: "website",
     locale: "es_EC",
     url: "https://lavinadulce.com/preguntas-frecuentes",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 }
 

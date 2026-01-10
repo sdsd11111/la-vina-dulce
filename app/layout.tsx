@@ -9,9 +9,10 @@ export const metadata: Metadata = {
   title: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
   description:
     "Deliciosas tortas personalizadas, repostería artesanal y catering para eventos en Loja, Ecuador. ¡Endulza tus celebraciones con nosotros!",
-  generator: "v0.app",
-  keywords:
-    "pastelería, panadería, tortas, Loja, Ecuador, artesanal, catering, eventos, tortas personalizadas, repostería fresca",
+  verification: {
+    google: "TNQnmBcMZo9EaTWSv0aadUA6iwQ-fa6y3_Wq7Hrhp2A",
+  },
+  keywords: "pastelería Loja, tortas personalizadas, panadería artesanal, postres Loja, catering eventos, La Viña Dulce",
   authors: [{ name: "La Viña Dulce" }],
   creator: "La Viña Dulce",
   publisher: "La Viña Dulce",
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
       "Deliciosas tortas personalizadas, repostería artesanal y catering para eventos en Loja, Ecuador. ¡Endulza tus celebraciones con nosotros!",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "La Viña Dulce - Pastelería Artesanal",
+        alt: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
       },
     ],
   },
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     creator: "@lavinadulce",
     title: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
     description: "Deliciosas tortas personalizadas, repostería artesanal y catering para eventos en Loja, Ecuador.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   manifest: "/site.webmanifest",
 }
@@ -94,7 +95,7 @@ export default function RootLayout({
               email: "negocios@lavinadulce.com",
               url: "https://lavinadulce.com",
               logo: "https://lavinadulce.com/icon-512.png",
-              image: "https://lavinadulce.com/og-image.jpg",
+              image: "https://lavinadulce.com/og-image.png",
               sameAs: [
                 "https://www.facebook.com/lavinadulceloja",
                 "https://www.instagram.com/lavinadulce.loja",

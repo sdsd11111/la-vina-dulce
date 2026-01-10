@@ -12,14 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "La Viña Dulce - Tortas del Día",
     description: "Disfruta de nuestras tortas frescas del día en Loja. Chocolate, tres leches, vainilla y más. Hechas con ingredientes frescos y mucho amor.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "La Viña Dulce - Tortas del Día",
-      },
-    ],
+    images: ["/og-image.png"],
     type: "website",
     locale: "es_EC",
     url: "https://lavinadulce.com/productos/tortas-del-diario",
@@ -29,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Tortas del Día",
     description: "Disfruta de nuestras tortas frescas del día en Loja. Chocolate, tres leches, vainilla y más. Hechas con ingredientes frescos y mucho amor.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 }
 

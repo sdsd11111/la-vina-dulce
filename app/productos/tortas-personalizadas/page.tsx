@@ -14,14 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "La Viña Dulce - Tortas Personalizadas",
     description: "Tortas personalizadas para bodas, cumpleaños y eventos en Loja. Diseños únicos que harán de tu celebración un momento inolvidable.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "La Viña Dulce - Tortas Personalizadas",
-      },
-    ],
+    images: ["/og-image.png"],
     type: "website",
     locale: "es_EC",
     url: "https://lavinadulce.com/productos/tortas-personalizadas",
@@ -31,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Tortas Personalizadas",
     description: "Tortas personalizadas para bodas, cumpleaños y eventos en Loja. Diseños únicos que harán de tu celebración un momento inolvidable.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 }
 

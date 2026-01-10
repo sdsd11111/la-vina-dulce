@@ -12,14 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "La Viña Dulce - Repostería y Cafetería",
     description: "Deliciosa repostería artesanal, pan recién horneado y el mejor café de Loja. Visítanos en la 18 de Noviembre y descubre nuestros sabores tradicionales.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "La Viña Dulce - Repostería y Cafetería",
-      },
-    ],
+    images: ["/og-image.png"],
     type: "website",
     locale: "es_EC",
     url: "https://lavinadulce.com/reposteria-cafeteria-loja",
@@ -29,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "La Viña Dulce - Repostería y Cafetería",
     description: "Deliciosa repostería artesanal, pan recién horneado y el mejor café de Loja. Visítanos en la 18 de Noviembre y descubre nuestros sabores tradicionales.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
 }
 
@@ -326,7 +319,7 @@ export default function ReposteriaCafeteria() {
                     className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:grid-flow-col-dense" : ""}`}
                   >
                     <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                      <ImageSlider images={item.images} alt={`${item.title} en La Viña Dulce Loja`} />
+                      <ImageSlider images={item.images} />
                     </div>
                     <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                       <div className="flex items-center space-x-3 mb-4">

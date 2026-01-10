@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     description: "De lo mejor de Loja, pide lo que necesites, disfruta nuestros servicios.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "La Viña Dulce - Pastelería",
+        alt: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
       },
     ],
     type: "website",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "La Viña Dulce - Pastelería",
-    description: "De lo mejor de Loja, pide lo que necesites, disfruta nuestros servicios.",
-    images: ["/og-image.jpg"],
+    title: "La Viña Dulce - Pastelería y Panadería Artesanal en Loja",
+    description: "Tortas personalizadas y repostería artesanal en Loja con entrega a domicilio.",
+    images: ["/og-image.png"],
   },
 }
 
