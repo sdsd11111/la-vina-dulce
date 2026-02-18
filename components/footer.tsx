@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
-          <div className="space-y-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4">
             <div className="flex items-center space-x-2">
               <img
                 src="/images/Logo.webp"
@@ -19,27 +19,27 @@ export default function Footer() {
                 La Viña Dulce
               </h3>
             </div>
-            <p className="text-sm opacity-90 leading-relaxed">
+            <p className="text-sm opacity-90 leading-relaxed max-w-xs">
               Endulzamos tus momentos especiales con nuestras creaciones artesanales hechas con amor y los mejores
               ingredientes.
             </p>
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4">
             <h4 className="text-lg font-semibold" style={{ fontFamily: "var(--font-poppins)" }}>
               Contacto
             </h4>
             <div className="space-y-3">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 <span className="text-sm">+593 99 563 9050</span>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 <span className="text-sm">negocios@lavinadulce.com</span>
               </div>
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start justify-center md:justify-start space-x-3">
                 <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
                   Calle 18 de Noviembre
@@ -51,19 +51,19 @@ export default function Footer() {
           </div>
 
           {/* Hours */}
-          <div className="space-y-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4">
             <h4 className="text-lg font-semibold" style={{ fontFamily: "var(--font-poppins)" }}>
               Horarios
             </h4>
             <div className="space-y-2">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Clock className="h-4 w-4 flex-shrink-0" />
                 <div className="text-sm">
                   <p>Lunes a Sábado</p>
                   <p className="opacity-90">8:00 - 20:00</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Clock className="h-4 w-4 flex-shrink-0" />
                 <div className="text-sm">
                   <p>Domingo</p>
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-4">
             <h4 className="text-lg font-semibold" style={{ fontFamily: "var(--font-poppins)" }}>
               Enlaces Rápidos
             </h4>

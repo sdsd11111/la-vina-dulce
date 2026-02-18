@@ -83,7 +83,7 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="relative lg:block hidden">
+            <div className="relative mt-8 lg:mt-0">
               <img
                 src="/images/hero-cake.webp"
                 alt="Torta personalizada elegante de La Viña Dulce"
@@ -575,12 +575,17 @@ export default function HomePage() {
                 </a>
               </Button>
             </div>
-            <div className="relative rounded-2xl shadow-lg overflow-hidden">
-              <img
-                src="/images/mapa-ubicacion-poster.jpg"
-                alt="Ubicación de La Viña Dulce en Loja"
-                className="w-full h-auto rounded-2xl"
-              />
+            <div className="relative rounded-2xl shadow-lg overflow-hidden h-[450px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.091253421578!2d-79.2037404!3d-4.0016609999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cb4801bfbd8e7f%3A0x76dd4d348a7beab6!2sPasteler%C3%ADa%20La%20Vi%C3%B1a%20Dulce!5e0!3m2!1ses-419!2sec!4v1771452815024!5m2!1ses-419!2sec"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps - La Viña Dulce"
+              ></iframe>
             </div>
           </div>
         </div>

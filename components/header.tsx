@@ -27,14 +27,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img 
-              src="/images/Logo.webp" 
-              alt="La Viña Dulce Logo" 
+            <img
+              src="/images/Logo.webp"
+              alt="La Viña Dulce Logo"
               className="h-12 w-auto"
               width={120}
               height={48}
             />
-            <h1 className="hidden md:block text-2xl font-bold text-secondary" style={{ fontFamily: "var(--font-pacifico)" }}>
+            <h1 className="text-xl md:text-2xl font-bold text-secondary" style={{ fontFamily: "var(--font-pacifico)" }}>
               La Viña Dulce
             </h1>
           </div>
